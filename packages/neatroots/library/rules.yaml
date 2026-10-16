@@ -64,7 +64,7 @@
     span: { type: llm }
     field: output
     flags: ''
-    pattern: '(sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|xox[abprs]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)'
+    pattern: '(sk-[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{22,}|xox[abprs]-[A-Za-z0-9-]{10,}|AIza[0-9A-Za-z_-]{35}|[spr]k_(?:live|test)_[A-Za-z0-9]{16,}|SG\.[A-Za-z0-9_-]{16,}\.[A-Za-z0-9_-]{16,}|npm_[A-Za-z0-9]{36}|SK[0-9a-f]{32}|hf_[A-Za-z0-9]{30,}|dckr_pat_[A-Za-z0-9_-]{20,}|dop_v1_[a-f0-9]{64}|eyJ[A-Za-z0-9_-]{8,}\.eyJ[A-Za-z0-9_-]{8,}\.[A-Za-z0-9_-]{8,}|(?<![a-z0-9+.-])[a-z][a-z0-9+.-]*://[^\s:/@]+:[^\s@/?#]+@[^\s/?#]+|aws_secret_access_key["'']?\s*[=:]\s*["'']?[A-Za-z0-9/+]{40}|-----BEGIN [A-Z ]*PRIVATE KEY-----)'
   guidance: Do not repeat credentials or keys in your replies. Refer to them by name instead.
 
 - id: unrecovered-tool-failure
