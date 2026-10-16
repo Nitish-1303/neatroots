@@ -31,6 +31,21 @@ const KEYS = [
   "ghp_abcdefghijklmnopqrstuvwxyz0123456789",
   "xoxb-1234567890-abcdefgh",
   "-----BEGIN RSA PRIVATE KEY-----",
+  "sk_" + "live_abcdefghijklmnopqrstuvwx",
+  "rk_" + "live_abcdefghijklmnopqrstuvwx",
+  "pk_" + "live_abcdefghijklmnopqrstuvwx",
+  "git" + "hub_pat_11ABCDEFG0abcdefghijkl_abcdefghijklmnopqrstuvwxyz",
+  "gho" + "_abcdefghijklmnopqrstuvwxyz0123456789",
+  "AIz" + "aSyA1234567890abcdefghijklmnopqrstuv",
+  "aws" + "_secret_access_key = wJalrXUtnFEMIK7MDENGbPxRfiCYEXAMPLEKEY12",
+  "pos" + "tgres://app:s3cretpw@db.internal:5432/main",
+  "eyJ" + "hbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0In0.abcdefghijk",
+  "SG." + "abcdefghijklmnop.qrstuvwxyz012345",
+  "npm" + "_abcdefghijklmnopqrstuvwxyz0123456789",
+  "SK0" + "123456789abcdef0123456789abcdef",
+  "hf_" + "abcdefghijklmnopqrstuvwxyz0123456789",
+  "dck" + "r_pat_abcdefghijklmnopqrstuvwx",
+  "dop" + "_v1_0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
 ];
 const NEAR = [
   "akiaiosfodnn7example",
@@ -41,6 +56,15 @@ const NEAR = [
   "the sk- prefix marks a key",
   "-----begin rsa private key-----",
   "Akiaiosfodnn7example",
+  "use sk_live_ keys only on the server",
+  "git" + "hub_pat_ tokens are fine-grained",
+  "connect to postgres://localhost:5432/main",
+  "see https://example.com:8080/path",
+  "email me at user@example.com",
+  "the JWT header starts with eyJ",
+  "SKU12345 is out of stock",
+  "set aws_secret_access_key in your config",
+  "npm" + "_config is an env prefix",
 ];
 
 describe("secret-in-output", () => {
