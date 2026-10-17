@@ -42,6 +42,8 @@ const KEYS = [
   "hf_" + "abcdefghijklmnopqrstuvwxyz0123456789",
   "dck" + "r_pat_abcdefghijklmnopqrstuvwx",
   "dop" + "_v1_0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "gsk" + "_abcdefghijklmnopqrstuvwxyz0123456789ABCD",
+  "ya2" + "9.abcdefghijklmnopqrstuvwxyz0123",
 ];
 const NEAR = [
   "akiaiosfodnn7example",
@@ -73,6 +75,8 @@ const NEAR = [
   "eyJ" + "hbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
   // SK followed by 32 hex chars inside a longer identifier is not a key.
   "TAS" + "K0123456789abcdef0123456789abcdef",
+  // A key glued to a preceding underscore has no word boundary, same as the redactor.
+  "token_ghp_abcdefghijklmnopqrstuvwxyz0123456789",
 ];
 
 describe("secret-in-output", () => {
